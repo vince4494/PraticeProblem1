@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PraticeProblem1
+namespace PracticeProblem1
 {
     class Program
     {
@@ -17,8 +17,6 @@ namespace PraticeProblem1
             ConvertLetter convertLetterFromUserInput = new ConvertLetter();
             output = convertLetterFromUserInput.upperCaseLetter(input);
             Console.WriteLine(output);
-
-
 
         }
     }
