@@ -13,14 +13,19 @@ namespace PracticeProblem1
         public string upperCaseLetter(string letter)
         {
             string exception = "Input is not a letter";
+            string exception2 = "Only one letter can be inputted";
 
-            if(Regex.IsMatch(letter, @"^[a-zA-Z]+$"))
+            if(!Regex.IsMatch(letter, @"^[a-zA-Z]+$")) 
             {
-                return letter.ToUpper();
+                return exception;
+            }
+            else if(letter.Length > 1)
+            {
+                return exception2;
             }
             else
             {
-                return exception;
+                return letter.ToUpper();
             }
             
         }
